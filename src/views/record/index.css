@@ -1,0 +1,164 @@
+.record-container {
+  background-color: #f6f8fa;
+  padding: 20px;
+  min-height: calc(100vh - 120px);
+}
+
+.record-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .record-layout {
+    flex-direction: row;
+  }
+  .info-card {
+    width: 300px;
+    flex-shrink: 0;
+  }
+  .table-card {
+    flex: 1;
+    margin-left: 20px;
+  }
+}
+
+.info-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.09);
+  background: white;
+  padding: 20px;
+  min-height: 300px;
+}
+
+.info-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.info-avatar {
+  margin-right: 12px;
+  background: linear-gradient(135deg, #f7971e 0%, #ffd200 100%);
+  color: white;
+}
+
+.info-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #222;
+}
+
+.info-list {
+  margin-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.info-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px dashed #f0f0f0;
+  font-size: 15px;
+}
+
+.info-item:last-child {
+  border-bottom: none;
+}
+
+.info-label {
+  color: #888;
+}
+
+.info-value {
+  font-weight: 600;
+  color: #222;
+  font-size: 1.1em;
+}
+
+.info-value.highlight {
+  color: #ff6f00;
+  font-size: 1.3em;
+}
+
+.table-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+  background: white;
+  padding: 20px;
+  min-height: 300px;
+}
+
+.table-title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.table-avatar {
+  margin-right: 12px;
+  background: linear-gradient(135deg, #6dd5ed 0%, #2193b0 100%);
+  color: white;
+}
+
+.table-title span {
+  font-size: 18px;
+  font-weight: 600;
+  color: #222;
+}
+
+.record-table {
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.record-table .ant-table-thead > tr > th {
+  background: #f0f4f8;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.record-table .ant-table-tbody > tr > td {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 16px;
+}
+
+.pagination-container .ant-pagination {
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .record-container {
+    padding: 10px;
+  }
+  .record-layout {
+    flex-direction: column;
+    gap: 16px;
+  }
+  .info-card,
+  .table-card {
+    width: 100%;
+    margin-left: 0;
+    padding: 16px;
+  }
+  .info-list {
+    gap: 10px;
+  }
+  .info-item {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,144 @@
+.app-item-contain {
+  margin-top: 10px;
+}
+
+.index-title-h3 {
+  font-size: 22px;
+  font-weight: 400;
+  color: #1f2f3d;
+  border-left: solid 10px #2ce8b4;
+  padding-left: 10px;
+  margin: 0 0 15px 0;
+}
+
+.task-title {
+  border-left-color: #3651d4;
+}
+
+.time-limit-title {
+  border-left-color: #dcd232;
+}
+
+.task-table {
+  border-radius: 12px;
+  overflow: hidden;
+  font-size: 14px;
+}
+
+.task-table .ant-table-thead > tr > th {
+  background: #f5f7fa;
+  font-weight: bold;
+  color: #333;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.task-table .ant-table-tbody > tr:hover > td {
+  background: #eef8ff;
+}
+
+.task-table .ant-table-tbody > tr > td {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.paper-card {
+  transition: all 0.3s ease;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.paper-card:hover {
+  box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+}
+
+.paper-image {
+  width: 50%;
+  height: 80%;
+  display: block;
+  margin: 20px auto 10px auto;
+  object-fit: contain;
+}
+
+.paper-info {
+  padding: 14px;
+}
+
+.paper-name {
+  margin: 0 0 13px 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.time-limit-info {
+  margin-bottom: 13px;
+  font-size: 12px;
+  color: #666;
+  line-height: 1.2;
+}
+
+.time-info {
+  margin: 0;
+}
+
+.paper-actions {
+  line-height: 12px;
+}
+
+.action-button {
+  padding: 0;
+  float: right;
+  font-size: 14px;
+  color: #1890ff;
+}
+
+.action-button:hover {
+  color: #40a9ff;
+}
+
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+@media (max-width: 768px) {
+  .index-title-h3 {
+    font-size: 18px;
+  }
+
+  .task-table {
+    font-size: 12px;
+  }
+
+  .paper-card {
+    margin-bottom: 16px;
+  }
+
+  .paper-image {
+    width: 60%;
+    height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .index-title-h3 {
+    font-size: 16px;
+    padding-left: 8px;
+    border-left-width: 8px;
+  }
+
+  .task-table {
+    font-size: 11px;
+  }
+
+  .paper-image {
+    width: 70%;
+  }
+}

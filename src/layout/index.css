@@ -1,0 +1,79 @@
+.student-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.student-header {
+  border-bottom: solid 1px #e6e6e6;
+  padding: 0px !important;
+  background-color: #fff;
+  height: 64px;
+  line-height: 64px;
+}
+
+.el-menu-title {
+  border-bottom: 0px !important;
+  float: right;
+}
+
+.el-menu-title .ant-menu-item {
+  font-size: 15px !important;
+  line-height: 62px !important;
+  padding: 0 20px;
+}
+
+.head-user {
+  color: #909399;
+  float: right;
+  margin: 0px 0px 0px 10px;
+}
+
+.el-dropdown-avatar {
+  margin-top: 12px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.student-main {
+  flex: 1;
+  padding: 0px !important;
+  background-color: #fff;
+}
+
+.footer-copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 150px;
+  background-color: #f7fbfd;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 40px 20px;
+  color: #666;
+  font-size: 14px;
+}
+
+.footer-copyright a {
+  color: #1890ff;
+  text-decoration: none;
+}
+
+.footer-copyright a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+  .footer-copyright {
+    padding: 40px 70px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .footer-copyright {
+    padding: 40px 150px;
+  }
+}

@@ -1,0 +1,125 @@
+.paper-container {
+  background-color: #f0f2f5;
+  padding: 20px;
+  min-height: calc(100vh - 120px);
+}
+
+.paper-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  background: white;
+}
+
+.paper-tabs {
+  margin-top: -16px;
+}
+
+.paper-tabs .ant-tabs-tab {
+  font-size: 16px;
+  padding: 12px 24px;
+}
+
+.paper-tabs .ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #1890ff;
+  font-weight: 600;
+}
+
+.paper-tabs .ant-tabs-ink-bar {
+  background-color: #1890ff;
+  height: 3px;
+}
+
+.filter-bar {
+  margin-bottom: 16px;
+  padding: 12px 0;
+  background: #fafafa;
+  border-radius: 8px;
+  padding-left: 16px;
+}
+
+.filter-bar .ant-radio-group {
+  display: flex;
+  align-items: center;
+}
+
+.filter-bar .ant-radio-button-wrapper {
+  margin-right: 8px;
+  border-radius: 4px;
+}
+
+.filter-bar .ant-radio-button-wrapper-checked {
+  background: #1890ff;
+  border-color: #1890ff;
+}
+
+.paper-table {
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.paper-table .ant-table-thead > tr > th {
+  background: #f5f7fa;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.paper-table .ant-table-tbody > tr:hover > td {
+  background: #eef8ff;
+}
+
+.paper-table .ant-table-tbody > tr > td {
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 16px;
+  padding: 16px;
+  background: #fafafa;
+  border-radius: 8px;
+}
+
+.pagination-container .ant-pagination {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .paper-container {
+    padding: 10px;
+  }
+
+  .paper-card {
+    padding: 10px;
+  }
+
+  .paper-tabs .ant-tabs-tab {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+
+  .filter-bar {
+    padding: 8px;
+    margin-bottom: 12px;
+  }
+
+  .filter-bar .ant-radio-button-wrapper {
+    font-size: 12px;
+    padding: 2px 8px;
+  }
+
+  .paper-table {
+    font-size: 12px;
+  }
+
+  .pagination-container {
+    padding: 12px;
+  }
+
+  .pagination-container .ant-pagination {
+    font-size: 12px;
+  }
+}

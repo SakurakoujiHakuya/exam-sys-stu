@@ -1,0 +1,169 @@
+.exam-do-container {
+  padding: 20px;
+  background-color: #f5f7fa;
+  min-height: 100vh;
+}
+
+.do-exam-title {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  background: white;
+  padding: 12px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.do-exam-title-tag {
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.do-exam-title-tag:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.do-exam-time {
+  margin-left: auto;
+  background: #f5f7fa;
+  padding: 8px 16px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #303133;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.do-exam-time .anticon {
+  color: #409EFF;
+  font-size: 16px;
+}
+
+.exam-paper-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.07);
+  background: white;
+  padding: 24px;
+}
+
+.exam-paper-header {
+  text-align: center;
+  margin-bottom: 32px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.exam-paper-header h2 {
+  margin: 0 0 16px 0;
+  color: #303133;
+  font-size: 28px;
+}
+
+.exam-paper-info {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  font-size: 16px;
+  color: #606266;
+}
+
+.exam-paper-info-item {
+  display: flex;
+  align-items: center;
+}
+
+.exam-paper-content {
+  margin-bottom: 32px;
+}
+
+.exam-section {
+  margin-bottom: 32px;
+}
+
+.exam-section h4 {
+  margin: 0 0 16px 0;
+  color: #303133;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.exam-question-card {
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border: 1px solid #e8e8e8;
+}
+
+.exam-question-header {
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px dashed #e8e8e8;
+}
+
+.exam-question-number {
+  font-weight: 600;
+  color: #1890ff;
+  font-size: 16px;
+  margin-right: 8px;
+}
+
+.exam-paper-footer {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  padding-top: 20px;
+  border-top: 1px solid #e8e8e8;
+}
+
+.exam-paper-footer .ant-btn {
+  min-width: 120px;
+  height: 44px;
+  font-size: 16px;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .exam-do-container {
+    padding: 10px;
+  }
+  
+  .do-exam-title {
+    padding: 8px;
+  }
+  
+  .do-exam-title-tag {
+    font-size: 12px;
+  }
+  
+  .do-exam-time {
+    margin-left: 0;
+    margin-top: 8px;
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .exam-paper-card {
+    padding: 16px;
+  }
+  
+  .exam-paper-header h2 {
+    font-size: 24px;
+  }
+  
+  .exam-paper-info {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .exam-paper-footer {
+    flex-direction: column;
+  }
+}
