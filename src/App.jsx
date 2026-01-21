@@ -12,6 +12,7 @@ import UserMessage from './views/user-info/message';
 import ExamPaperDo from './views/exam/paper/do';
 import ExamPaperEdit from './views/exam/paper/edit';
 import ExamPaperRead from './views/exam/paper/read';
+import Error401 from './views/error-page/401';
 import Error404 from './views/error-page/404';
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
         <Route path="/do" element={<ExamPaperDo />} />
         <Route path="/edit" element={<ExamPaperEdit />} />
         <Route path="/read" element={<ExamPaperRead />} />
+        <Route path="/401" element={<Error401 />} />
         <Route path="*" element={<Error404 />} />
       </Routes>
     </BrowserRouter>
